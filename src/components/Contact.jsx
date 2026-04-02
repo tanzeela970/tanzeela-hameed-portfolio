@@ -68,7 +68,7 @@ const Contact = () => {
                 <div className="w-12 h-12 bg-bg-secondary flex items-center justify-center rounded-full group-hover:bg-accent group-hover:text-bg-primary transition-colors">
                   <Mail size={20} />
                 </div>
-                <span className="text-lg">tanzeelahameed114@gmail.com</span>
+                <span className="text-lg">gmail.com</span>
               </a>
 
               <a href="https://www.linkedin.com/in/tanzeela-hameed-090b7134a" className="flex items-center space-x-4 text-text-secondary hover:text-accent transition-colors group">
