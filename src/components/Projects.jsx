@@ -1,16 +1,18 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 import { FaGithub as Github } from 'react-icons/fa';
+import academyImg from '../assets/24academy.png';
+import evercarto from '../assets/evercartoo.png';
 
 const Projects = () => {
   const projects = [
     {
       title: 'Aesthetic E-Commerce',
-      description: 'A modern landing page for an online fashion store focusing on fluid typography and smooth animations.',
-      tech: ['React', 'Tailwind CSS', 'Framer Motion'],
-      image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop',
-      live: '#',
-      github: '#'
+      description: 'A modern website for an online fashion store focusing on fluid typography and all the modern features and admin dashboard.',
+      tech: ['Vanilla JavaScript', 'HTML', 'CSS'],
+      image: evercarto,
+      live: 'https://ever-carto-store-ecommerce-website.vercel.app/',
+      github: 'https://github.com/tanzeela970/EverCarto-Store-Ecommerce-website'
     },
     {
       title: 'QA Dashboard UI',
@@ -27,7 +29,24 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop',
       live: '#',
       github: '#'
-    }
+    },
+    {
+  title: 'Educational Website',
+  description: 'Industry-led digital courses and apprenticeship training designed to empower the next generation of marketing and tech professionals.',
+  tech: ['Javascript', 'Html', 'css3','php'],
+  image: academyImg,
+  live: 'https://24hour.academy/',
+  github: 'https://github.com/tanzeela970/24HoursAcademy-educational-website/tree/main/24hoursacademy'
+},
+{
+  title: 'Your 5th Project Name',
+  description: 'Short description here...',
+  tech: ['Tech1', 'Tech2'],
+  image: 'image-url',
+  live: 'live-link',
+  github: 'github-link'
+}
+    
   ];
 
   return (
