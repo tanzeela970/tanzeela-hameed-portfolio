@@ -80,7 +80,7 @@ const QAExperience = () => {
 
                     <ul className="space-y-2">
                       {exp.responsibilities.map((item, i) => (
-                        <li key={i} className="text-sm text-text-secondary flex gap-2">
+                        <li key={i} className="text-sm text-text-primary/90 flex gap-2">
                           <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
                           <span>{item}</span>
                         </li>
