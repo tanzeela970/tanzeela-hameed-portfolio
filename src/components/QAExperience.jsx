@@ -20,7 +20,7 @@ const QAExperience = () => {
         'Followed Agile methodology (SDLC/STLC) during testing cycles'
       ],
 
-      icon: <Bug className="w-6 h-6 text-accent" />
+      icon: <Bug className="hidden sm:block w-6 h-6 text-accent" />
     }
   ];
 
