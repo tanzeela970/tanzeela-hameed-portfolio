@@ -1,22 +1,26 @@
+
 import { motion } from 'framer-motion';
-import { LayoutTemplate, ShieldAlert, MonitorCheck } from 'lucide-react';
+import { ShieldAlert, Bug, ClipboardCheck } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      title: 'Frontend Development',
-      description: 'Building responsive, accessible, and fast web applications using modern frameworks like React, Vite, and Tailwind CSS. Focus on aesthetic design matched with solid architecture.',
-      icon: <LayoutTemplate size={40} className="text-accent mb-6" />
-    },
-    {
-      title: 'Bug Testing & QA',
-      description: 'Comprehensive manual testing including regression, and functional testing. Detailed reporting in Jira/Google Sheets or Excel to help engineering teams resolve issues efficiently.',
+      title: 'Manual QA Testing',
+      description:
+        'Perform detailed manual testing of web applications including functional, UI/UX, regression, smoke, and sanity testing to ensure a bug-free user experience.',
       icon: <ShieldAlert size={40} className="text-accent mb-6" />
     },
     {
-      title: 'UI Debugging & Refinement',
-      description: 'Bridging the gap between design and code. Identifying visual inconsistencies across different browsers and devices, and implementing Pixel-Perfect fixes.',
-      icon: <MonitorCheck size={40} className="text-accent mb-6" />
+      title: 'Bug Reporting & Tracking',
+      description:
+        'Identify, document, and report bugs with clear reproduction steps, expected vs actual results, and screenshots using tools like Jira, Excel, or Google Sheets.',
+      icon: <Bug size={40} className="text-accent mb-6" />
+    },
+    {
+      title: 'Test Case Design & QA Review',
+      description:
+        'Create structured test cases and test scenarios, review application workflows, and ensure complete coverage of business requirements for better product quality.',
+      icon: <ClipboardCheck size={40} className="text-accent mb-6" />
     }
   ];
 

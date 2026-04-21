@@ -4,22 +4,23 @@ import { Bug, CheckCircle2, History, Code } from 'lucide-react';
 const QAExperience = () => {
   const experiences = [
     {
-      role: 'Frontend Developer',
-      period: '2024 - 2025',
-      description: 'Developing highly responsive and interactive user interfaces using React and Tailwind CSS. Bridging the gap between design concepts and functional code.',
-      icon: <Code className="w-6 h-6 text-accent" />
-    },
-    {
-      role: 'Manual QA Engineer',
-      period: '2025 - present',
-      description: 'Executed functional, regression, and cross-browser testing cycles. Utilized testing tools and reported detailed bugs to ensure pixel-perfect, bug-free applications.',
+      role: 'Software Quality Assurance Engineer (Intern)',
+      company: 'Salaar Technology Pvt. Ltd.',
+      period: 'Oct 2025 - Present',
+      description:
+        'Worked as a Software Quality Assurance Engineer focused on ensuring high-quality, bug-free web applications through structured manual testing and QA practices in a real development environment.',
+      
+      responsibilities: [
+        'Performed manual testing including functional, UI/UX, and regression testing',
+        'Created and executed detailed test cases and test scenarios',
+        'Identified, documented, and reported bugs with clear reproduction steps',
+        'Collaborated with developers to verify fixes and improve product stability',
+        'Conducted cross-browser and responsive testing',
+        'Performed basic API testing using Postman',
+        'Followed Agile methodology (SDLC/STLC) during testing cycles'
+      ],
+
       icon: <Bug className="w-6 h-6 text-accent" />
-    },
-    {
-      role: 'UI/UX Tester & Web Developer',
-      period: '2024 - present',
-      description: 'Tested user interfaces for responsiveness and accessibility compliance. Collaborated with teams to implement continuous UI improvements and rapid iterations.',
-      icon: <CheckCircle2 className="w-6 h-6 text-accent" />
     }
   ];
 
@@ -38,7 +39,7 @@ const QAExperience = () => {
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Combining robust frontend development skills with rigorous quality assurance methodologies.
+            Ensuring bug-free and user-friendly applications through effective quality assurance practices.
           </p>
         </motion.div>
 
@@ -71,6 +72,21 @@ const QAExperience = () => {
                   <p className="text-text-secondary">
                     {exp.description}
                   </p>
+                  {/* Responsibilities */}
+                  <div className="mt-4">
+                    <h4 className="text-sm font-semibold text-text-primary mb-2">
+                      Responsibilities:
+                    </h4>
+
+                    <ul className="space-y-2">
+                      {exp.responsibilities.map((item, i) => (
+                        <li key={i} className="text-sm text-text-secondary flex gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </motion.div>
             ))}

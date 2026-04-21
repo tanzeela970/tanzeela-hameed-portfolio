@@ -46,7 +46,7 @@ const About = () => {
               </div>
 
               <p className="text-text-secondary text-center mb-6 text-sm leading-relaxed">
-                I combine development and testing to deliver seamless, high-quality user experiences.
+                Focused on delivering reliable, bug-free applications through effective quality assurance.
               </p>
 
             </motion.div>
@@ -64,19 +64,24 @@ const About = () => {
               </h2>
               <div className="w-16 h-1 bg-accent rounded-full mb-6"></div>
               <p className="text-lg text-text-secondary leading-relaxed">
-                I am a passionate Manual QA Engineer and Frontend Developer. This unique combination allows me to not only build visually stunning user interfaces but also rigorously test them to ensure they are robust, accessible, and bug-free.
+                Hi, I’m Tanzeela Hameed, a dedicated Software Quality Assurance Engineer with a strong focus on delivering reliable and user-friendly applications.
               </p>
               <p className="text-lg text-text-secondary leading-relaxed mt-4">
-                My dual perspective helps teams ship high-quality products faster, reducing the communication gap between development and testing phases. I look at code with an engineer's logic and a user's empathy.
+               I specialize in manual testing, including functional, UI, and regression testing, along with clear bug reporting. I have experience testing web applications, creating test cases, and using tools like Postman and browser developer tools.
               </p>
+              <p className="text-lg text-text-secondary leading-relaxed mt-4">
+                Currently, I’m expanding my skills in test automation to deliver faster and more efficient testing solutions.
+               </p>
+               <p className="text-lg text-text-secondary leading-relaxed mt-4">
+                I believe that great software is not just built — it is carefully tested.
+               </p>
             </motion.div>
-
             <motion.div variants={itemVariants} className="grid sm:grid-cols-2 gap-4 mt-8">
               <div className="p-4 bg-bg-primary rounded-xl border border-border shadow-sm flex items-start space-x-4">
                 <Target className="text-accent flex-shrink-0" size={24} />
                 <div>
-                  <h4 className="font-semibold text-text-primary">Pixel Perfect</h4>
-                  <p className="text-sm text-text-secondary mt-1">Design into Code.</p>
+                  <h4 className="font-semibold text-text-primary">Quality Assurance</h4>
+                  <p className="text-sm text-text-secondary mt-1">Ensuring bug-free & reliable applications.</p>
                 </div>
               </div>
               <div className="p-4 bg-bg-primary rounded-xl border border-border shadow-sm flex items-start space-x-4">

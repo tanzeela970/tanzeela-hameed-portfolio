@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         <p className="text-center text-text-secondary text-sm">
-          &copy; {new Date().getFullYear()} Manual QA & Frontend Developer. All rights reserved.
+          &copy; {new Date().getFullYear()} Tanzeela Hameed. Software Quality Assurance Engineer.
         </p>
       </div>
     </footer>

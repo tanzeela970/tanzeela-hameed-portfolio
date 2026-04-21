@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { ArrowRight, Code, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Bug, ShieldCheck } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -21,13 +21,13 @@ const Hero = () => {
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold tracking-tight mb-4 text-text-primary w-fit">
-            <span className="block">Manual QA Engineer</span>
-            <span className="block text-center text-[#8C5A3C] my-2">&</span>
-            <span className="block text-accent">Frontend Developer.</span>
+            <span className="block text-accent">Software Quality Assurance (SQA) Engineer</span>
+            {/* <span className="block">Manual QA Engineer</span> */}
+            {/* <span className="block text-center text-[#8C5A3C] my-2">&</span> */}
           </h1>
 
           <p className="text-lg md:text-xl text-text-secondary mb-8 max-w-lg">
-            Building beautiful interfaces & ensuring quality experiences. Bridging the gap between creative design and flawless functionality.
+            I ensure high-quality, bug-free web applications through detailed manual testing, test case design, and user-focused quality assurance practices.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -48,7 +48,7 @@ const Hero = () => {
               offset={-64}
               className="cursor-pointer inline-flex items-center px-6 py-3 border border-border text-base font-medium rounded-lg text-text-primary bg-transparent hover:bg-bg-secondary transition-colors"
             >
-              Contact Me
+              Hire Me
             </Link>
           </div>
         </motion.div>
@@ -69,14 +69,14 @@ const Hero = () => {
                   transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
                   className="p-6 bg-bg-primary rounded-2xl shadow-lg border border-border flex flex-col items-center"
                 >
-                  <Code size={40} className="text-accent mb-2" />
-                  <span className="font-semibold text-sm">Frontend</span>
+                  <Bug size={40} className="text-accent mb-2" />
+                  <span className="font-semibold text-sm">Bug Reporting</span>
                 </motion.div>
 
                 <motion.div
                   initial={{ y: 0 }}
                   animate={{ y: [10, -10, 10] }}
-                  transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1 }}
+                  transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
                   className="p-6 bg-bg-primary rounded-2xl shadow-lg border border-border flex flex-col items-center mt-12"
                 >
                   <ShieldCheck size={40} className="text-accent mb-2" />

@@ -1,51 +1,51 @@
 import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-import { FaGithub as Github } from 'react-icons/fa';
+import { FileText } from 'lucide-react';
 import academyImg from '../assets/24academy.png';
-import evercarto from '../assets/evercartoo.png';
+import ipe from '../assets/ipe.jpeg';
+import Fotray from '../assets/fotray.png';
 
 const Projects = () => {
   const projects = [
-    {
-      title: 'Aesthetic E-Commerce',
-      description: 'A modern website for an online fashion store focusing on fluid typography and all the modern features and admin dashboard.',
-      tech: ['Vanilla JavaScript', 'HTML', 'CSS'],
-      image: evercarto,
-      live: 'https://ever-carto-store-ecommerce-website.vercel.app/',
-      github: 'https://github.com/tanzeela970/EverCarto-Store-Ecommerce-website'
+      {
+      title: 'IPE Education Website',
+      description:
+        'Educational platform designed to provide online learning courses and student resources with smooth navigation and responsive UI.',
+      
+      testingTypes: [
+        'Functional Testing',
+        'UI/UX Testing',
+        'Regression Testing',
+        'Cross-Browser Testing'
+      ],
+
+      image: ipe ,
+      live: 'https://www.ipe-education.com/',
+      report: 'https://docs.google.com/spreadsheets/d/1m3uVQA6buiaTD2TwiTBaw7JGxip_FkztaoFkmkYUwH8/edit'
     },
     {
-      title: 'QA Dashboard UI',
-      description: 'A minimal dashboard interface for tracking test cases, bug reports, and project health over time.',
-      tech: ['React', 'Vite', 'CSS Modules', 'Chart.js'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
-      live: '#',
-      github: '#'
+      title: '24HoursAcademy',
+      description:
+        'Educational platform designed to provide online learning courses and student resources with smooth navigation and responsive UI.',
+      testingTypes: [
+        'Smoke testing',
+        'Functional Testing',
+        'UI/UX Testing',
+        'Regression Testing',
+        'Cross-Browser Testing'
+      ],
+      image: academyImg,
+      live: 'https://24hour.academy/',
+      report: 'https://github.com/tanzeela970/24HoursAcademy-educational-website/tree/main/24hoursacademy'
     },
     {
-      title: 'Task Tracking Tool',
-      description: 'An interactive kanban board application with a strong emphasis on keyboard accessibility and dark mode.',
-      tech: ['JavaScript', 'HTML5', 'Sass', 'Local Storage'],
-      image: 'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=800&auto=format&fit=crop',
-      live: '#',
-      github: '#'
-    },
-    {
-  title: 'Educational Website',
-  description: 'Industry-led digital courses and apprenticeship training designed to empower the next generation of marketing and tech professionals.',
-  tech: ['Javascript', 'Html', 'css3','php'],
-  image: academyImg,
-  live: 'https://24hour.academy/',
-  github: 'https://github.com/tanzeela970/24HoursAcademy-educational-website/tree/main/24hoursacademy'
-},
-{
-  title: 'Your 5th Project Name',
-  description: 'Short description here...',
-  tech: ['Tech1', 'Tech2'],
-  image: 'image-url',
-  live: 'live-link',
-  github: 'github-link'
-}
+      title: 'Fotray Network',
+      description: 'Performed end-to-end manual testing for the Fortay Network web application, ensuring functionality, usability, and performance. Identified and reported bugs, validated fixes, and collaborated with developers to improve overall product quality.',
+      tech: ['test cases', 'Bugs report' ,'Google sheet'],
+      image: Fotray,
+      live: 'https://fortray.org/',
+      github: 'github-link'
+    }
     
   ];
 
@@ -64,7 +64,7 @@ const Projects = () => {
           </h2>
           <div className="w-16 h-1 bg-accent rounded-full mx-auto mb-6"></div>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            A selection of my recent frontend development and QA work, demonstrating a focus on clean code and beautiful design.
+            A showcase of my recent projects in quality assurance and web development, emphasizing clean execution and smooth user experience.
           </p>
         </motion.div>
 
@@ -91,20 +91,25 @@ const Projects = () => {
                 <h3 className="text-xl font-bold text-text-primary mb-2">{project.title}</h3>
                 <p className="text-text-secondary text-sm mb-6 flex-grow">{project.description}</p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tech.map((t, i) => (
-                    <span key={i} className="text-xs font-medium px-2.5 py-1 bg-bg-primary border border-border rounded-md text-text-secondary">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.testingTypes?.map((t, i) => (
+                    <span
+                      key={i}
+                      className="text-xs font-medium px-2.5 py-1 bg-bg-primary border border-border rounded-md text-text-secondary"
+                    >
                       {t}
                     </span>
                   ))}
                 </div>
 
                 <div className="flex gap-4 pt-4 border-t border-border">
-                  <a href={project.live} className="flex items-center text-sm font-medium text-accent hover:text-accent-hover transition-colors">
-                    <ExternalLink size={16} className="mr-1" /> Live Demo
+                  <a
+                    href={project.live} className="flex items-center text-sm font-medium text-accent hover:text-accent-hover transition-colors">
+                    <ExternalLink size={16} className="mr-1" /> Live Site
                   </a>
-                  <a href={project.github} className="flex items-center text-sm font-medium text-text-primary hover:text-accent transition-colors">
-                    <Github size={16} className="mr-1" /> Source
+                  <a
+                    href={project.report} className="flex items-center text-sm font-medium text-text-primary hover:text-accent transition-colors">
+                    <FileText size={16} className="mr-1" /> Test Report
                   </a>
                 </div>
               </div>
